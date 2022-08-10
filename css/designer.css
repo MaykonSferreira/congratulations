@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap');
+:root{
+    --cor-texto-principal: #ffffff;
+    --cor-fundo1: #000000;
+    --cor-fundo2: #131313;
+    --cor-fundo3: #1b1b1b;
+    --cor-fundo4: #292929;
+    --cor-vermelho: #a53838;
+    --cor-borda: #c7c7c7; 
+    --cor-sub: #979797;
+    --color-sobre: #2e6fd1;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'DM Sans', sans-serif;
+    color: var(--cor-texto-principal);
+    background: var(--cor-fundo);
+}
+
+.uppercase{
+    text-transform: uppercase;  
+  }
+
+.center{
+  text-align: center;  
+}
+
+.flex{
+    display: flex;
+}
+
+header{
+padding: 32px;
+background: var(--cor-fundo1);
+}
+
+header h3{
+    color: var(--cor-sub)
+    }
+
+header img{
+    margin-top: 32px;
+    border-radius: 200px;
+    border: solid 5px var(--cor-borda);
+    box-shadow: 0 0 15px  rgba(255, 255, 255, 0.45);
+    height: 200px;
+}
+
+#numeros-sociais{
+    padding: 32px;
+    background: var(--cor-fundo2) ;
+    align-items: center;
+    justify-content: center;
+}
+
+#numeros-sociais p{
+    color: var(--cor-texto-principal);
+}
+
+#numeros-seguidores{
+    margin-right: 50px;
+}
+
+#numeros-seguindo{
+    flex-direction: column;
+}
+
+.color-number{
+    color: var(--cor-vermelho);
+}
+
+#sobre{
+    padding: 32px;
+    background: var(--cor-fundo3);
+}
+
+#sobre h1{
+    margin-bottom:  24px;
+    display: flex;
+    color: var(--color-sobre);
+}
+
+#sobre p{
+  line-height: 1.7; 
+  align-items: center;
+  justify-content: center; 
+}
+
+#seguir a{
+    transition: all ease-in .3s;
+    display: block;
+    border-radius: 100px;
+    box-shadow: 0 0 20px  rgb(0, 0, 0, 0.50);
+    background: var(--cor-vermelho);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 7px;
+    padding: 1rem;
+    width: 100%;
+}
+
+#seguir{
+    background: var(--cor-fundo4);
+    padding: 3.5rem;
+    padding-bottom: 2rem;
+    text-align: center;  
+}
+
+#seguir:hover a{
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 960px){
+    body{
+      margin: 0 auto;
+      width: 960px; 
+      background-color: var(--cor-fundo4);
+    }
+
+    #seguir{
+    width: 40vw;
+    margin: 3rem auto;
+    } 
+    
+    header{
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    
+    }
+
+    header h1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+    
+    }
+
+    header h3{
+    display: flex;
+    align-items: center;
+    flex: 0.4;
+    
+    }
+
+    header img{
+    display: flex;
+    margin-top: -1px;
+    align-items: center;
+    height: 150px;
+    }
+
+    #sobre{
+    text-align: center;
+    }
+}  
